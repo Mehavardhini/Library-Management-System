@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14143102032270" configfile="/Library/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="addBorrower" x="652" y="209" id="pf14150003884730" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf14150003884731" path="/addBorrower.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="bookLoans" x="1052" y="216" id="pf14150003884742" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf14150003884743" path="/bookLoans.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="checkIn" x="885" y="380" id="pf14150003884744" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf14150003884745" path="/checkIn.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="checkout" x="652" y="441" id="pf14150003884746" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf14150003884747" path="/checkout.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="startPage" x="892" y="166" id="pf14150003884748" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" inlinks="pf14150003884731 pf14150003884743 pf14150003884745 pf14150003884747 pf14150132580560" path="/startPage.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="fines" x="1092" y="359" id="pf14150132580561" outlinks="pf14150132580560" path="/fines.jsp"/>
+  <links id="pf14150003884731" target="pf14150003884748" source="pf14150003884730" outcome="home"/>
+  <links id="pf14150003884743" target="pf14150003884748" source="pf14150003884742" outcome="home"/>
+  <links id="pf14150003884745" target="pf14150003884748" source="pf14150003884744" outcome="home"/>
+  <links id="pf14150003884747" target="pf14150003884748" source="pf14150003884746" outcome="home"/>
+  <links id="pf14150132580560" target="pf14150003884748" source="pf14150132580561" outcome="home"/>
+</pageflow:Pageflow>
